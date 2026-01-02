@@ -1,0 +1,37 @@
+Hello, world! Welcome to 2026 — where prompts ship faster than code.
+This is a simple test. Or is it?
+
+AI is fun; AI is useful. But AI isn't magic.
+In 2026, we build LLM apps, RAG pipelines, and agents.
+
+Agents use tools. Tools call APIs?
+APIs rate-limit (429)! Timeouts happen... so we retry, log, and move on.
+
+Here are some spicy edge cases for your tokenizer:
+- Numbers: 2, 10, 3.14, and 1e-3 are tokens (maybe).
+- Hyphenated words: end-to-end, prompt-injection, tool-calling, and real-world.
+- Contractions: don't, can't, it's, we're, you'll.
+- MixedCase: OpenAI, LangChain, LangGraph, FastAPI, GitHub.
+- Symbols: $100, 50%, #hashtags, and @handles.
+
+RAG time:
+We chunk docs. We embed vectors. We retrieve top-k.
+Then we rerank, cite sources, and avoid hallucinations!
+
+Tool calling 101:
+Agent -> planner -> tool -> observation -> answer.
+Stop conditions matter. Budgets matter. Loops are real.
+
+Links and “PII-like” strings:
+Email: hello@example.com
+Docs: https://example.com/docs
+Ticket: INC-2026-00042
+
+Repeat test: repeat repeat repeat.
+Repeat again: AI AI AI... and again—AI!
+
+Final check: Are you counting sentences correctly? Great :)
+Now ship your function, push to GitHub, and don’t forget the README!
+
+Regards,
+Abdo Kamar.
