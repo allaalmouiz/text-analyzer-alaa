@@ -1,1 +1,6 @@
-
+spacy
+nltk
+contractions
+emoji
+regex
+en_core_web_sm
