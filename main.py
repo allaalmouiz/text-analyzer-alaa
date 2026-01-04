@@ -45,6 +45,7 @@ def normalize_text_robust(text):
     - Preserve numbers, hyphenated words, MixedCase, symbols
     - Collapse repeated words
     """
+    
     # --- Expand contractions ---
     text = contractions.fix(text)
     
@@ -99,13 +100,19 @@ def normalize_text_robust(text):
     
     # --- Sentences ---
     sentences = [sent.text.strip().replace("~", "-") for sent in doc.sents]
+
     
     # --- Word & sentence counts ---
     word_count = len(collapsed_words)
     sentence_count = len(sentences)
     
     # --- Frequent words ---
-    freq_words = Counter(collapsed_words).most_common(10)
+    import string
+
+    freq_words = Counter(
+        w for w in collapsed_words
+        if not all(ch in string.punctuation for ch in w) ).most_common(10)
+
     
     return {
         'normalized_text': normalized_text,
