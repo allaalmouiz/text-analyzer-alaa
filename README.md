@@ -12,8 +12,6 @@ This tool performs:
   
 It uses **linguistic tokenization and lemmatization**, not naive string splitting, making the results more meaningful for NLP analysis.
 
----
-
 ## Features
 
 * Uses spaCy’s tokenizer and sentence segmenter
@@ -21,8 +19,6 @@ It uses **linguistic tokenization and lemmatization**, not naive string splittin
 * Preserves numbers, symbols, hashtags, and mentions
 * Filters punctuation safely
 * Robust file reading with error handling
-
----
 
 ## Project Structure
 
@@ -33,8 +29,6 @@ It uses **linguistic tokenization and lemmatization**, not naive string splittin
 ├── requirements.txt
 └── README.md
 ```
-
----
 
 ## Requirements
 
@@ -49,8 +43,6 @@ regex
 en_core_web_sm
 ```
 
----
-
 ## Environment Setup
 
 ### 1. Creating a virtual environment
@@ -60,8 +52,6 @@ en_core_web_sm
 ```bash
 python -m venv venv
 ```
-
----
 
 ### 2. Activating the environment
 
@@ -73,15 +63,11 @@ source venv/bin/activate
 
 You should now see `(venv)` in your terminal.
 
----
-
 ### 3. Installing dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
-
----
 
 ### 4. Downloading the spaCy language model
 
@@ -90,8 +76,6 @@ python -m spacy download en_core_web_sm
 ```
 
 This step is required — the script will not run without the model.
-
----
 
 ## 5. Running the Program
 
@@ -102,9 +86,7 @@ This step is required — the script will not run without the model.
 python main.py
 ```
 
----
-
-## 📤 Example Output
+##  Example Output
 
 ```
 ========== ANALYSIS RESULTS ===========
@@ -120,8 +102,6 @@ Top 10 Frequent Words:
 ...
 ```
 
----
-
 ## How It Works (High Level)
 
 * Text is processed once using `nlp(text)`
@@ -135,18 +115,6 @@ Top 10 Frequent Words:
 
 This ensures **consistent, linguistically grounded statistics**.
 
----
-
-## 🛠️ Customization Ideas
-
-You can easily extend this script to:
-
-* Remove stopwords (`token.is_stop`)
-* Filter by part-of-speech (`token.pos_`)
-* Normalize sentences semantically
-* Analyze multiple files or directories
-
----
 
 ## License
 
