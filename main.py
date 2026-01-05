@@ -68,6 +68,27 @@ def read_text_file(path):
     except FileNotFoundError:
         print("File not found.")
         return None
+def read_text_file(filepath):
+    """
+    Reads a text file safely with error handling
+    """
+    print("\n====== STARTING READING THE FILE ======")
+    print(f"FILE: {filepath}")
+    print("=======================================\n")
+
+    try:
+        with open(filepath, "r", encoding="utf-8") as file:
+            content = file.read()
+            return content
+
+    except FileNotFoundError:
+        print("Error: File not found.")
+    except PermissionError:
+        print("Error: Permission denied.")
+    except UnicodeDecodeError:
+        print("Error: Encoding issue.")
+    except OSError as e:
+        print(f"Error: OS error: {e}")
 
 
 # ---------- Main ----------
@@ -81,7 +102,7 @@ def main():
     print("\n========== ANALYSIS STARTING ==========")
     print(f"File %s is being analyzed." % "sample_text.txt")
 
-    print("\n========== ANALYSIS RESULTS ==========")
+    print("\n========== ANALYSIS RESULTS ===========")
     print("Word Count:", result["word_count"])
     print("Sentence Count:", result["sentence_count"])
 
