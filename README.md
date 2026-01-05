@@ -89,6 +89,14 @@ python main.py
 ##  Example Output
 
 ```
+====== STARTING READING THE FILE ======
+FILE: sample_text.txt
+=======================================
+
+
+========== ANALYSIS STARTING ==========
+File sample_text.txt is being analyzed.
+
 ========== ANALYSIS RESULTS ===========
 Word Count: 289
 Sentence Count: 34
